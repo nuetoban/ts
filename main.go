@@ -10,6 +10,7 @@ import (
 func main() {
     if len(os.Args) > 2 {
         fmt.Println("Usage: ts [TIMESTAMP]")
+        os.Exit(2)
     }
 
     if len(os.Args) == 1 {
