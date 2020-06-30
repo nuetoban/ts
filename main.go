@@ -20,6 +20,7 @@ func main() {
     i, err := strconv.ParseInt(os.Args[1], 10, 64)
     if err != nil {
         fmt.Println(err)
+        os.Exit(1)
     }
 
     unixTimeUTC := time.Unix(i, 0)
